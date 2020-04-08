@@ -7,7 +7,7 @@ imgray = rgb2gray(im);
 imbin = imbinarize(imgray);
 im = edge(imgray, 'prewitt');
 
- %Below steps are to find location of number plate
+ %Below steps are to find location of number platemojpopojpo
 Iprops=regionprops(im,'BoundingBox','Area', 'Image');
 area = Iprops.Area;
 count = numel(Iprops);
